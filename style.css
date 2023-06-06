@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  --font-menu: 'Mulish', sans-serif;
+  --font-texto: 'Open Sans', sans-serif;
+  --font-botao: 'DM Sans', sans-serif;
+  --color-span: #89c5cc;
+  --color-texto: #7d7987;
+  --color-menu: #1f1534;
+  --color-botao: #69B99D;
+  --color-font-botao: #F9F9F9;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+.balls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 65px 0 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 5px 58px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: var(--font-menu);
+  color: var(--color-texto);
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 3px solid var(--color-texto);
+  border-radius: 50%;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: var(--color-menu);
+  border-bottom: 3px solid var(--color-span);
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+h1 {
+  max-width: 489px;
+  font-family: var(--font-menu);
+  font-weight: normal;
+  font-size: 49px;
+  line-height: 56px;
+}
+
+h1 span {
+  font-weight: bold;
+  color: var(--color-span);
+}
+
+section p {
+  max-width: 320px;
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--color-texto);
+}
+
+button {
+  padding: 15px 32px;
+  background: var(--color-botao);
+  color: var(--color-font-botao);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button:hover {
+  background: green;
+  cursor: pointer;
+}
+
+
+
+footer {
+  text-align: center;
+  font-family: var(--font-texto);
+  font-size: 14px;
+  line-height: 28px;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-menu);
+}
+
+footer a:hover {
+  border-bottom: 3px solid var(--color-span);
+  border-radius: 50%;
+}
